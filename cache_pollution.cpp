@@ -2,7 +2,6 @@
 #include <cstdint>
 #include <iostream>
 #include <vector>
-
 using Clock = std::chrono::steady_clock;
 
 constexpr std::size_t HOT_SIZE = 1024;
@@ -66,7 +65,7 @@ int main()
     // Run the cache-disrupting workload.
     bulk_processing();
 
-    // Latency immediately after that workload.
+    // Latency immediately after that workload
     double after = benchmark(critical_function, 10000);
 
     std::cout << "Baseline: " << baseline << " ns\n";

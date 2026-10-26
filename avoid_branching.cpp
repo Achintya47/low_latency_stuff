@@ -37,7 +37,6 @@ Result run_branching(const std::vector<Fill>& fills) {
             last_sell_qty = fill.qty;
         }
     }
-
     return {position, last_buy_qty, last_sell_qty};
 }
 

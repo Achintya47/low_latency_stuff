@@ -2,6 +2,7 @@
 #include <chrono>
 #include <memory>
 
+
 using Clock = std::chrono::high_resolution_clock;
 
 constexpr int N = 100'000'000;
